@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_normalNoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal Notification"
+        />
+
+    <Button
+        android:id="@+id/btn_notiWithIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification with Intent"
+        />
+
+    <Button
+        android:id="@+id/btn_notiWithAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification with Action"
+        />
+
+    <Button
+        android:id="@+id/btn_notiWithProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification with Progress"
+        />
+
+    <Button
+        android:id="@+id/btn_notiWithImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification with Image"
+        />
+
+
+    <Button
+        android:id="@+id/btn_customNoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Notification"
+        />
+
+
+
+</LinearLayout>
