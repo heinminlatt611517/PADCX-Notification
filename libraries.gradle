@@ -1,0 +1,6 @@
+ext{
+   fcm_version = "20.2.4"
+    libraries = [
+            firebase_cloud_messaging : "com.google.firebase:firebase-messaging:$fcm_version"
+    ]
+}

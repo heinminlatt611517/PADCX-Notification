@@ -21,6 +21,20 @@ allprojects {
     }
 }
 
+def verySensitiveDP = loadSensitiveData()
+
+ext{
+    verySensitiveData = verySensitiveDP.getProperty('MY_SENSITIVE_DATA')
+}
+
+def loadSensitiveData(){
+    Properties verySensitiveDataProperties = new Properties()
+    verySensitiveDataProperties.load(project.rootProject.file("very_sensitive_data.properties").newDataInputStream())
+    return verySensitiveDataProperties
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply from : "libraries.gradle"
